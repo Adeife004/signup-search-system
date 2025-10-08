@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>SignUp Search System</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- forms-wrapper -->
+    <div class="forms-wrapper" id="formsWrapper">
+
+        <!-- ========== SIGN UP SECTION ========== -->
+        <div class="form-container" id="signupContainer">
+
+            <!-- signup-section -->
+            <div class="signup-section">
+
+                <!-- Go to Search Section -->
+                <div class="login">
+                    <h4>Want to find registered users?</h4>
+                    <button id="goToSearch">Search</button>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="sign-up">
+                    <form id="signup-form" action="" method="POST">
+                        <h4>Sign Up</h4>
+
+                        <div class="signup">
+                            <label for="username">Name</label>
+                            <input type="text" id="name" name="username" placeholder="Enter your Name" required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="age">Age</label>
+                            <input type="age" id="age" name="age" placeholder="Enter your Age" required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="address">Address</label>
+                            <input type="address" id="address" name="address" placeholder="Enter Your Address" required>
+                        </div>
+
+                        <button type="button" class="signup-btn" onclick="submitForm()">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========== SEARCH SECTION ========== -->
+        <div class="form-container" id="searchContainer">
+
+            <!-- signin-section -->
+            <div class="signin-section">
+
+                <!-- Search Form -->
+                <div class="signin">
+
+                    <!-- search-form -->
+                    <form id="search-form">
+                        <h4>Search Registered Users</h4>
+
+                        <!-- signin-input -->
+                        <div class="signin-input">
+                            <label for="searchInput">Enter Username or Email</label>
+                            <input type="text" id="searchInput" name="query" placeholder="Search users..." required />
+                        </div>
+
+                        <button type="search" class="signin-btn" onclick="searchUsers()">Search</button>
+                    </form>
+
+                    <!-- search-results -->
+                    <div class="search-results">
+
+                        <!-- usersTable -->
+                        <table id="usersTable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Age</th>
+                                    <th>Address</th>
+                                </tr>
+                            </thead>
+
+                            <!-- usersTableBody -->
+                            <tbody id="usersTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- info -->
+                <div class="info">
+                    <h4>Want to register a new user?</h4>
+                    <button type="button" id="goToSignup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- external js -->
+    <!-- <script>
+        const formsWrapper = document.getElementById("formsWrapper");
+        const goToSearch = document.getElementById("goToSearch");
+        const goToSignup = document.getElementById("goToSignup");
+
+        goToSearch.addEventListener("click", () => {
+            formsWrapper.classList.add("show-search");
+        });
+
+        goToSignup.addEventListener("click", () => {
+            formsWrapper.classList.remove("show-search");
+        });
+
+        // Simulated search (you can connect to a backend later)
+        const searchForm = document.getElementById("search-form");
+        const searchResults = document.getElementById("searchResults");
+
+        const registeredUsers = [
+            { username: "john_doe", email: "john@example.com" },
+            { username: "precious_akande", email: "precious@gmail.com" },
+            { username: "ridwan_rasheed", email: "ridwan@gmail.com" },
+            { username: "olawale_iremide", email: "iremide@yahoo.com" },
+        ];
+
+        searchForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const query = document.getElementById("searchInput").value.toLowerCase();
+            const results = registeredUsers.filter(
+                user =>
+                    user.username.toLowerCase().includes(query) ||
+                    user.email.toLowerCase().includes(query)
+            );
+
+            if (results.length > 0) {
+                searchResults.innerHTML = results
+                    .map(user => `<p><strong>${user.username}</strong> — ${user.email}</p>`)
+                    .join("");
+            } else {
+                searchResults.innerHTML = `<p>No users found.</p>`;
+            }
+        }); -->
+
+
+
+    <!-- </script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
