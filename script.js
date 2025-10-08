@@ -30,20 +30,20 @@ function submitForm() {
   }
 
   // check if the email already exists
-  let emailTaken = peopleArr.some(
+  let existingUser = peopleArr.find(
     (person) => person.email.toLowerCase() === email.toLowerCase()
   );
 
-  if (emailTaken) {
+  if (existingUser) {
     alert("This email has already been used!");
-    return; 
+    return;
   }
 
-  // create new person and add to list
+  // people object and pushing to an array
   let person = { name, email, age, address };
   peopleArr.push(person);
 
-  // sort alphabetically by name before displaying
+  // sort helps in displaying names or data or items alphabetically depending on the condition given using the localeCompare method
   peopleArr.sort((a, b) => a.name.localeCompare(b.name));
   displayTable(peopleArr);
 
@@ -74,18 +74,18 @@ function displayTable(data) {
 }
 
 // Search users by name, email, age or address
-searchForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+// searchForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  let query = searchInput.value.trim().toLowerCase();
+//   let query = searchInput.value.trim().toLowerCase();
 
-  let results = peopleArr.filter(
-    (person) =>
-      person.name.toLowerCase().includes(query) ||
-      person.email.toLowerCase().includes(query) ||
-      person.age.toLowerCase().includes(query) ||
-      person.address.toLowerCase().includes(query)
-  );
+//   let results = peopleArr.filter(
+//     (person) =>
+//       person.name.toLowerCase().includes(query) ||
+//       person.email.toLowerCase().includes(query) ||
+//       person.age.toLowerCase().includes(query) ||
+//       person.address.toLowerCase().includes(query)
+//   );
 
-  displayTable(results);
-});
+//   displayTable(results);
+// });

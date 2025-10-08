@@ -12,7 +12,7 @@ body {
 
 /* ========== SIGN UP SECTION ========== */
 #signupContainer {
-    background-color: #db2845;
+    background-color: #181c14;
 }
 
 .signup-section {
@@ -28,7 +28,7 @@ body {
 }
 
 .login {
-    background-color: #ee526c;
+    background-color: #3c3d37;
     width: 50%;
     height: 60vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -48,8 +48,8 @@ body {
 .login button {
     padding: 10px 20px;
     background-color: #fff;
-    color: #ee526c;
-    border: 2px solid #ee526c;
+    color: #181c14;
+    border: 2px solid #181c14;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -57,9 +57,9 @@ body {
 }
 
 .login button:hover {
-    background-color: #db2845;
+    background-color: #181c14;
     color: #fff;
-    border-color: #db2845;
+    border-color: #181c14;
 }
 
 .sign-up {
@@ -76,7 +76,7 @@ body {
 .sign-up h4 {
     text-align: center;
     margin-bottom: 20px;
-    color: #db2845;
+    color: #181c14;
 }
 
 .sign-up input {
@@ -90,13 +90,13 @@ body {
 
 .sign-up input:focus {
     outline: none;
-    border-color: #db2845;
+    border-color: #181c14;
     box-shadow: 0 0 5px rgba(219, 40, 69, 0.5);
 }
 
 .sign-up button {
     padding: 10px 20px;
-    background-color: #db2845;
+    background-color: #181c14;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -106,7 +106,7 @@ body {
 }
 
 .sign-up button:hover {
-    background-color: #ee526c;
+    background-color: #3c3d37;
 }
 
 .forms-wrapper {
@@ -131,7 +131,7 @@ body {
 
 /* ========== LOGIN SECTION ==========   */
 #searchContainer {
-    background-color: #007bff;
+    background-color: #664e2a;
 }
 
 .signin-section {
@@ -160,7 +160,7 @@ body {
 .signin h4 {
     text-align: center;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #664e2a;
     font-size: 18px;
 }
 
@@ -184,7 +184,7 @@ body {
 .signin-btn {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #664e2a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -194,7 +194,8 @@ body {
 }
 
 .signin-btn:hover {
-    background-color: #0056b3;
+    background-color: #ddcebe;
+    color: #664e2a;
 }
 
 /* Forgot Password Link */
@@ -204,7 +205,7 @@ body {
 }
 
 .forgot-password a {
-    color: #007bff;
+    color: #664e2a;
     text-decoration: none;
     font-size: 12px;
 }
@@ -241,7 +242,7 @@ tr:hover {
 
 /* Info Section */
 .info {
-    background-color: #1687ff;
+    background-color: #ddcebe;
     width: 50%;
     height: 60vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -249,7 +250,7 @@ tr:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #664e2a;
     text-align: center;
 }
 
@@ -261,8 +262,8 @@ tr:hover {
 .info button {
     padding: 10px 20px;
     background-color: #fff;
-    color: #007bff;
-    border: 2px solid #007bff;
+    color: #664e2a;
+    border: 2px solid #664e2a;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -270,9 +271,9 @@ tr:hover {
 }
 
 .info button:hover {
-    background-color: #0056b3;
+    background-color: #664e2a;
     color: #fff;
-    border-color: #0056b3;
+    border-color: #ddcebe;
 }
 
 /* Media responsiveness */
